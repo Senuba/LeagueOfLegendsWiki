@@ -1,0 +1,42 @@
+@import '../style.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono{
+    color:yellow !important;
+    font-size:3em;
+}
+
+.modal__close {
+  @include flexCenCen;
+  border-radius: 50%;
+  height: 45px;
+  margin: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+}
+
+.modal__close:hover {
+  background-color:#62c241;
+  cursor: pointer;
+}
+
+.modal__close-icon {
+  height: 20px;
+  width: 20px;
+  fill: #faf76a;
+}

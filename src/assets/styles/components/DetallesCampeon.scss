@@ -1,0 +1,120 @@
+@import '../style.scss';
+
+.imgCharacter {
+    box-shadow: -4px 31px 57px 21px rgb(9 160 203 / 75%);
+    border: 4px solid #1c1c1c;
+    border-radius: 13px;
+}
+
+
+
+.powerStatsBox{
+min-width: 100%;
+min-height: 100px;
+border-radius: 20px;
+color:white;
+}
+.tips{
+    color:white;
+    padding:10px;
+}
+
+.consejos{
+    background-color: rgba(58, 58, 58, 0.623) !important;
+}
+
+.characterDetail {
+    position:absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:white;
+    left: 40%;
+    top: 10%;
+}
+
+
+
+
+.progress{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsla(210, 94%, 50%, 0) !important;
+}
+
+.centrar{
+    text-align: center;
+}
+
+h1{
+    font-size: 6.5em;
+}
+
+hr{
+    border-top: 3px solid #000 !important;
+}
+
+
+.parrafo{
+    font-size: 2em;
+    padding: 0.5em;
+    border: 3px solid #000 !important;
+
+}
+
+.padding{
+    padding: auto;
+}
+
+#attack{
+    position: absolute;
+    background-color:aqua;
+    width: 1px;
+    height: 15px;
+    border-radius: 15px; 
+}
+
+#defense{
+    position: absolute;
+    background-color:greenyellow;
+    width: 1px;
+    height: 15px;
+    border-radius: 15px; 
+}
+
+#magic{
+    position: absolute;
+    background-color: blueviolet;
+    width: 1px;
+    height: 15px;
+    border-radius: 15px; 
+}
+
+#difficulty{
+    position: absolute;
+    background-color: red;
+    width: 1px;
+    height: 15px;
+    border-radius: 15px; 
+}
+
+.colTitle{
+    padding-top: 5%;
+    padding-left: 5%;
+    text-align-last: center;
+    font-size: 22px;
+    padding-right: 5%;
+    padding-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-5.nowidth{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .col-3{
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}

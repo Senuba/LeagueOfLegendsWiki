@@ -10,7 +10,7 @@ const Modal = (props) => (
     ? createPortal(
         <div className="modal">
           <figure onClick={props.onClose} className="modal__close">
-          <FontAwesomeIcon icon={faTimesCircle} className="icono" />
+            <FontAwesomeIcon icon={faTimesCircle} className="icono" />
           </figure>
           <div className="modal__container">{props.children}</div>
         </div>,

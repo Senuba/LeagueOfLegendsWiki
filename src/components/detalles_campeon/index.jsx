@@ -22,16 +22,6 @@ const DetallesCampeon_index = () => {
     const [value1, setValue1]=useState(false);
     const [mensaje, setMensaje]=useState("");
 
-    
-    /* for (let i=0;i < storage.length;i++){
-        if(storage[i].id === campeon_objeto.id){
-
-            console.log(storage[i].id,"========",campeon_objeto.id)
-            setValue1(true);
-            break;
-        }
-    } */
-
     const agregarFavorito = (e) => {
         e.preventDefault();
         const items=localStorage.getItem("favoritos");
@@ -43,7 +33,7 @@ const DetallesCampeon_index = () => {
             for (let i=0;i < storage.length;i++){
                 if(storage[i].id === campeon_objeto.id){
 
-                    setMensaje("Ya lo tienes en Favorito");
+                    setMensaje("Ya lo tienes en Favoritos...");
                     handleOpenModal();
                     break;
                 }
@@ -51,7 +41,7 @@ const DetallesCampeon_index = () => {
                     const parse_items=JSON.parse(items);
                     parse_items.push(campeon_objeto);
                     localStorage.setItem("favoritos",JSON.stringify(parse_items));
-                    setMensaje("Campeon agregado a favoritos");
+                    setMensaje("Campeon agregado a favoritos...");
                     handleOpenModal();
                 }
             } 
@@ -60,9 +50,9 @@ const DetallesCampeon_index = () => {
     return (
         <Fragment>
             <Modal isOpen={modal} onClose={handleCloseModal} >
-            <div className="characterDetail">
+            <div className="characterDetail imagen_fondo" style={{backgroundImage:loading_imagen}}>
                 <div className="row">
-                    <div className="col"><h1>{mensaje}</h1></div>
+                    <div className="col mensaje"><h1>{mensaje}</h1></div>
                 </div>
             </div>
             </Modal>
@@ -77,7 +67,7 @@ const DetallesCampeon_index = () => {
             <div className="col center"><h1>{campeon_objeto.name}</h1></div>
             {
                 
-                value1 !== true ? <div className="col padding"> <button type="submit" className="btn btn-success glyphicon glyphicon-star" >Agregar Favorito</button></div> : ""
+                value1 !== true ? <div className="col padding"> <button type="submit" className="btn btn-success glyphicon glyphicon-star padding" >Agregar Favorito</button></div> : ""
             }
         </div>
         <div className="row">

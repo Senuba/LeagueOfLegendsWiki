@@ -67,7 +67,7 @@ const DetallesCampeon_index = () => {
             <div className="col center"><h1>{campeon_objeto.name}</h1></div>
             {
                 
-                value1 !== true ? <div className="col padding"> <button type="submit" className="btn btn-success glyphicon glyphicon-star padding" >Agregar Favorito</button></div> : ""
+                value1 !== true ? <div className="col padding"> <button type="submit" className="btn btn-success glyphicon glyphicon-star padding"  >Agregar Favorito</button></div> : ""
             }
         </div>
         <div className="row">
